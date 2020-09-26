@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 60px;
+    
+}
+
+.item{
+    border: 1px solid black;
+    background-color: gainsboro;
+    width: 29%;
+    height: auto;    
+
+    display: flex;
+    flex-direction: column;
+}
+
+.item h3{
+    align-self: flex-end;
+
+}
+
+.item p{
+    text-align: justify;
+    margin: 20px;
+}
+
+.name1,
+.name2,
+.name3{
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 180px;
+    height: 5vh;
+    text-align: center;
+}
+
+.name1{
+    background-color: #8D6346;
+}
+
+.name2{
+    background-color: #88292F;
+}
+
+.name3{
+    background-color: #F2BB05;
+}
+
+@media (min-width: 992px){
+    .i1,
+    .i2,
+    .i3{
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .i1,
+    .i2{
+        width: 45%;
+        margin-bottom: 40px;
+    }
+
+    .i3{
+        width: 95%;
+    }
+}
+
+@media (max-width: 767px){
+    .i1,
+    .i2,
+    .i3{
+        width: 95%;
+        margin: 20px 0;
+    }
+}
